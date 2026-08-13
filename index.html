@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="See the most starred, downloaded, and trending open-source Android apps.">
+  <meta name="robots" content="index, follow">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Top Fossdroid - Popular &amp; Trending Android FOSS Apps">
+  <meta property="og:description" content="See the most starred, downloaded, and trending open-source Android apps.">
+  <meta property="og:url" content="https://ehab-0.github.io/topfossdroid/">
+  <meta property="og:image" content="https://ehab-0.github.io/topfossdroid/social-preview.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Top Fossdroid - Popular and trending Android FOSS apps">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://ehab-0.github.io/topfossdroid/">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <title>Top Fossdroid - Popular &amp; Trending Android FOSS Apps</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="accessibility.css">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Top Fossdroid",
+      "url": "https://ehab-0.github.io/topfossdroid/",
+      "description": "See the most starred, downloaded, and trending open-source Android apps."
+    }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to rankings</a>
+  <header class="site-header">
+    <div class="shell header-inner">
+      <div>
+        <a class="brand" href="./" aria-label="Top Fossdroid home">Top Fossdroid</a>
+        <p>See what's popular and trending in Android FOSS.</p>
+      </div>
+      <div class="header-meta"><strong id="total-apps"></strong><span id="generated" class="generated"></span></div>
+    </div>
+  </header>
+
+  <main id="main-content" class="shell">
+    <section class="controls" aria-labelledby="page-title">
+      <h1 id="page-title" class="sr-only">Popular and trending Android FOSS apps</h1>
+      <label class="search">
+        <span class="sr-only">Search apps</span>
+        <svg aria-hidden="true" viewBox="0 0 24 24"><path d="m21 21-4.35-4.35m2.35-5.65a8 8 0 1 1-16 0 8 8 0 0 1 16 0Z"/></svg>
+        <input id="search" type="search" placeholder="Search apps, packages or repositories…" autocomplete="off">
+        <button id="clear-search" class="clear-search" type="button" aria-label="Clear search" hidden>×</button>
+      </label>
+
+      <div class="sort-controls">
+        <span class="control-label">Sort by</span>
+        <nav class="sort-buttons" aria-label="Sort apps">
+          <button data-sort="popular">Popular</button>
+          <button data-sort="downloads">Most Downloaded</button>
+          <button data-sort="stars">Most Starred</button>
+          <button data-sort="trending" aria-describedby="trending-definition">Trending</button>
+          <button data-sort="fresh">Fresh &amp; Popular</button>
+          <button data-sort="gems">Hidden Gems</button>
+          <button class="secondary-sort" data-sort="updated">Recently Updated</button>
+          <button class="secondary-sort" data-sort="added">Recently Added</button>
+        </nav>
+        <label class="mobile-sort"><span>Sort by</span><select id="sort-select"><option value="popular">Popular</option><option value="downloads">Most Downloaded</option><option value="stars">Most Starred</option><option value="trending">Trending</option><option value="fresh">Fresh &amp; Popular</option><option value="gems">Hidden Gems</option><option value="updated">Recently Updated</option><option value="added">Recently Added</option></select></label>
+      </div>
+      <p id="sort-description" class="sort-description" aria-live="polite"></p>
+      <p id="trending-definition" class="trend-note" hidden>Ranked by stars gained over the last 30 days.</p>
+      <p id="trend-fallback" class="trend-note" hidden>Trend history is still being collected; ranking currently falls back to total stars.</p>
+
+      <div class="filter-row">
+        <div class="popover"><button id="categories-button" class="filter-button" type="button" aria-expanded="false" aria-controls="categories-panel">Categories</button><div id="categories-panel" class="filter-panel" hidden><strong>Categories</strong><label class="facet-search"><span class="sr-only">Search categories</span><input id="category-search" type="search" placeholder="Search categories…" autocomplete="off"></label><div id="category-options" class="check-list"></div><button class="panel-clear" type="button" data-clear-group="categories">Clear</button></div></div>
+        <div class="popover"><button id="catalogs-button" class="filter-button" type="button" aria-expanded="false" aria-controls="catalogs-panel">Catalogs</button><div id="catalogs-panel" class="filter-panel" hidden><strong>Catalogs</strong><label class="facet-search"><span class="sr-only">Search catalogs</span><input id="catalog-search" type="search" placeholder="Search catalogs…" autocomplete="off"></label><div id="catalog-options" class="check-list"></div><button class="panel-clear" type="button" data-clear-group="catalogs">Clear</button></div></div>
+        <label class="select-filter"><span class="sr-only">Updated</span><select id="updated" aria-label="Updated"><option value="">Updated</option><option value="30d">Past 30 days</option><option value="3m">Past 3 months</option><option value="6m">Past 6 months</option><option value="1y">Past year</option></select></label>
+        <div class="popover more-filters"><button id="more-button" class="filter-button" type="button" aria-expanded="false" aria-controls="more-panel">More filters</button><div id="more-panel" class="filter-panel more-panel" hidden>
+          <strong>More filters</strong>
+          <label><span>Minimum stars</span><select id="min-stars"><option value="">Any</option><option value="100">100+</option><option value="1000">1k+</option><option value="5000">5k+</option><option value="10000">10k+</option></select></label>
+          <label><span>Minimum F-Droid downloads</span><select id="min-downloads"><option value="">Any</option><option value="10000">10k+</option><option value="100000">100k+</option><option value="1000000">1m+</option></select></label>
+          <fieldset><legend>Code host</legend><div id="host-options" class="check-list compact"></div></fieldset>
+          <label class="check"><input id="active-only" type="checkbox"><span>Active projects only <small>Updated within 12 months</small></span></label>
+        </div></div>
+      </div>
+      <div class="quick-filters" aria-label="Quick filters"><span>Quick filters</span><button type="button" data-preset="active">Active</button><button type="button" data-preset="stars">1k+ stars</button><button type="button" data-preset="downloads">100k+ downloads</button><button type="button" data-preset="multi">Multi-catalog</button></div>
+      <div id="filter-chips" class="filter-chips" aria-label="Active filters"></div>
+    </section>
+
+    <div class="result-bar"><div><strong id="count" aria-live="polite"></strong><h2 id="context-heading"></h2></div><button id="clear-filters" class="clear-action" hidden>Clear all</button><span class="result-actions"><button id="share-ranking" class="clear-action" type="button">Copy link</button><span id="share-status" class="copy-status" role="status"></span></span></div>
+    <section class="catalog" aria-labelledby="results-heading">
+      <h2 id="results-heading" class="sr-only">Ranked apps</h2>
+      <div class="table-head" aria-hidden="true"><span>#</span><span>App</span><span>Stars</span><span>Trend <small>30d</small></span><span>F-Droid downloads</span><span id="date-heading">Updated</span></div>
+      <div id="results"><div class="message">Loading rankings…</div></div>
+      <div class="load-wrap"><button id="load-more" class="load-more" hidden>Load 50 more</button></div>
+    </section>
+  </main>
+
+  <dialog id="details" aria-labelledby="detail-title"><button class="close" aria-label="Close app details">×</button><div id="detail-content"></div></dialog>
+  <footer class="shell"><details class="about-rankings"><summary>About rankings and data</summary><div><p><strong>Popular</strong> combines repository stars, measured F-Droid downloads, and recent activity.</p><p><strong>Most Downloaded</strong> uses available F-Droid download metrics. These are not total Android installs.</p><p><strong>Most Starred</strong> uses public GitHub, GitLab, and Codeberg repository stars.</p><p><strong>Trending</strong> uses stars gained over the last 30 days when sufficient history exists.</p><p><strong>Fresh &amp; Popular</strong> shows Popular apps updated within 180 days with at least 500 stars or 10,000 measured downloads.</p><p><strong>Hidden Gems</strong> shows apps updated within one year, below 5,000 stars, and with at least 25,000 measured downloads.</p><p>Discovery comes from F-Droid-compatible catalogs and official project repositories. Archive and nightly-only apps are excluded from current rankings. Forge metadata and F-Droid download metrics enrich the catalog; source trust is not a ranking signal.</p><p>Stars measure repository popularity, not app quality.</p></div></details></footer>
+  <script src="app.js" defer></script>
+</body>
+</html>

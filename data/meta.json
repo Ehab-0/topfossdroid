@@ -1,0 +1,341 @@
+{
+  "generatedAt": "2026-08-13T10:54:26Z",
+  "appCount": 5147,
+  "totalKnownApps": 7399,
+  "rankingEligibleApps": 5147,
+  "archiveOnlyApps": 2235,
+  "nightlyOnlyApps": 17,
+  "multiCatalogApps": 2800,
+  "repositoryCount": 15,
+  "sources": [
+    {
+      "id": "fdroid",
+      "name": "F-Droid",
+      "authority": "official_ecosystem",
+      "channel": "stable",
+      "rankingEligible": true
+    },
+    {
+      "id": "izzyondroid",
+      "name": "IzzyOnDroid",
+      "authority": "curated_third_party",
+      "channel": "stable",
+      "rankingEligible": true
+    },
+    {
+      "id": "guardian",
+      "name": "Guardian Project",
+      "authority": "official_ecosystem",
+      "channel": "stable",
+      "rankingEligible": true
+    },
+    {
+      "id": "microg",
+      "name": "microG",
+      "authority": "official_project",
+      "channel": "stable",
+      "rankingEligible": true
+    },
+    {
+      "id": "newpipe",
+      "name": "NewPipe",
+      "authority": "official_project",
+      "channel": "stable",
+      "rankingEligible": true
+    },
+    {
+      "id": "molly",
+      "name": "Molly",
+      "authority": "official_project",
+      "channel": "stable",
+      "rankingEligible": true
+    },
+    {
+      "id": "molly-foss",
+      "name": "Molly-FOSS",
+      "authority": "official_project",
+      "channel": "stable",
+      "rankingEligible": true
+    },
+    {
+      "id": "briar",
+      "name": "Briar",
+      "authority": "official_project",
+      "channel": "stable",
+      "rankingEligible": true
+    },
+    {
+      "id": "kde",
+      "name": "KDE Android",
+      "authority": "official_project",
+      "channel": "stable",
+      "rankingEligible": true
+    },
+    {
+      "id": "bitwarden",
+      "name": "Bitwarden",
+      "authority": "official_project",
+      "channel": "stable",
+      "rankingEligible": true
+    },
+    {
+      "id": "cryptomator",
+      "name": "Cryptomator",
+      "authority": "official_project",
+      "channel": "stable",
+      "rankingEligible": true
+    },
+    {
+      "id": "monerujo",
+      "name": "Monerujo",
+      "authority": "official_project",
+      "channel": "stable",
+      "rankingEligible": true
+    },
+    {
+      "id": "briar-archive",
+      "name": "Briar Archive",
+      "authority": "official_project",
+      "channel": "archive",
+      "rankingEligible": false
+    },
+    {
+      "id": "kde-nightly",
+      "name": "KDE Android Nightly",
+      "authority": "official_project",
+      "channel": "nightly",
+      "rankingEligible": false
+    },
+    {
+      "id": "fdroid-archive",
+      "name": "F-Droid Archive",
+      "authority": "official_ecosystem",
+      "channel": "archive",
+      "rankingEligible": false
+    }
+  ],
+  "sourceCounts": {
+    "fdroid": 4189,
+    "izzyondroid": 1396,
+    "guardian": 16,
+    "microg": 3,
+    "newpipe": 1,
+    "molly": 1,
+    "molly-foss": 1,
+    "briar": 2,
+    "kde": 10,
+    "bitwarden": 1,
+    "cryptomator": 1,
+    "monerujo": 5,
+    "briar-archive": 2,
+    "kde-nightly": 27,
+    "fdroid-archive": 4916
+  },
+  "sourceStats": {
+    "fdroid": {
+      "rawRecords": 4189,
+      "alreadyKnown": 0,
+      "newUnique": 4189
+    },
+    "izzyondroid": {
+      "rawRecords": 1396,
+      "alreadyKnown": 467,
+      "newUnique": 929
+    },
+    "guardian": {
+      "rawRecords": 16,
+      "alreadyKnown": 6,
+      "newUnique": 10
+    },
+    "microg": {
+      "rawRecords": 3,
+      "alreadyKnown": 0,
+      "newUnique": 3
+    },
+    "newpipe": {
+      "rawRecords": 1,
+      "alreadyKnown": 1,
+      "newUnique": 0
+    },
+    "molly": {
+      "rawRecords": 1,
+      "alreadyKnown": 0,
+      "newUnique": 1
+    },
+    "molly-foss": {
+      "rawRecords": 1,
+      "alreadyKnown": 1,
+      "newUnique": 0
+    },
+    "briar": {
+      "rawRecords": 2,
+      "alreadyKnown": 2,
+      "newUnique": 0
+    },
+    "kde": {
+      "rawRecords": 10,
+      "alreadyKnown": 1,
+      "newUnique": 9
+    },
+    "bitwarden": {
+      "rawRecords": 1,
+      "alreadyKnown": 0,
+      "newUnique": 1
+    },
+    "cryptomator": {
+      "rawRecords": 1,
+      "alreadyKnown": 1,
+      "newUnique": 0
+    },
+    "monerujo": {
+      "rawRecords": 5,
+      "alreadyKnown": 0,
+      "newUnique": 5
+    },
+    "briar-archive": {
+      "rawRecords": 2,
+      "alreadyKnown": 2,
+      "newUnique": 0
+    },
+    "kde-nightly": {
+      "rawRecords": 27,
+      "alreadyKnown": 10,
+      "newUnique": 17
+    },
+    "fdroid-archive": {
+      "rawRecords": 4916,
+      "alreadyKnown": 2681,
+      "newUnique": 2235
+    }
+  },
+  "sourceHealth": [
+    {
+      "id": "fdroid",
+      "status": "OK",
+      "records": 4189,
+      "stale": false
+    },
+    {
+      "id": "izzyondroid",
+      "status": "HTTP failure",
+      "records": 1396,
+      "stale": true
+    },
+    {
+      "id": "guardian",
+      "status": "OK",
+      "records": 16,
+      "stale": false
+    },
+    {
+      "id": "microg",
+      "status": "OK",
+      "records": 3,
+      "stale": false
+    },
+    {
+      "id": "newpipe",
+      "status": "OK",
+      "records": 1,
+      "stale": false
+    },
+    {
+      "id": "molly",
+      "status": "OK",
+      "records": 1,
+      "stale": false
+    },
+    {
+      "id": "molly-foss",
+      "status": "OK",
+      "records": 1,
+      "stale": false
+    },
+    {
+      "id": "briar",
+      "status": "OK",
+      "records": 2,
+      "stale": false
+    },
+    {
+      "id": "kde",
+      "status": "OK",
+      "records": 10,
+      "stale": false
+    },
+    {
+      "id": "bitwarden",
+      "status": "OK",
+      "records": 1,
+      "stale": false
+    },
+    {
+      "id": "cryptomator",
+      "status": "OK",
+      "records": 1,
+      "stale": false
+    },
+    {
+      "id": "monerujo",
+      "status": "OK",
+      "records": 5,
+      "stale": false
+    },
+    {
+      "id": "briar-archive",
+      "status": "OK",
+      "records": 2,
+      "stale": false
+    },
+    {
+      "id": "kde-nightly",
+      "status": "OK",
+      "records": 27,
+      "stale": false
+    },
+    {
+      "id": "fdroid-archive",
+      "status": "OK",
+      "records": 4916,
+      "stale": false
+    }
+  ],
+  "githubApps": 0,
+  "gitlabApps": 518,
+  "codebergApps": 304,
+  "recognizedGithubRepos": 5652,
+  "recognizedGitlabRepos": 520,
+  "recognizedCodebergRepos": 302,
+  "githubEnrichedRepos": 0,
+  "githubUnavailableRepos": 0,
+  "githubFailedRepos": 0,
+  "gitlabEnrichedRepos": 0,
+  "gitlabFailedRepos": 19,
+  "codebergEnrichedRepos": 293,
+  "codebergFailedRepos": 9,
+  "missingRecognizedStarApps": 5944,
+  "numericStarApps": 822,
+  "metricsApps": 50,
+  "forgeHostCounts": {
+    "github": 5916,
+    "gitlab": 537,
+    "codeberg": 313
+  },
+  "iconCandidates": 4784,
+  "cachedIcons": 4777,
+  "iconFailures": 7,
+  "metrics": {
+    "name": "F-Droid Metrics Distilled",
+    "url": "https://grote.gitlab.io/fdroid-metrics-distilled/",
+    "scope": "Top 50 packages; summed weekly measurements",
+    "from": "2024-01-29",
+    "to": "2026-07-20"
+  },
+  "failures": [
+    {
+      "source": "izzyondroid",
+      "kind": "HTTP failure",
+      "error": "<urlopen error [Errno 111] Connection refused>"
+    }
+  ]
+}

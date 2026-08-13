@@ -1,0 +1,18 @@
+@media (forced-colors: active) {
+  .search svg { stroke: CanvasText; }
+  .sort-buttons button.active,
+  .filter-button[aria-expanded="true"] { border-color: Highlight; }
+}
+
+@media (prefers-contrast: more) {
+  :root {
+    --muted: #45515b;
+    --border: #9ba5ad;
+    --border-strong: #687680;
+  }
+}
+
+@media (max-width: 620px) {
+  .app-cell { position: relative; }
+  .app-button::after { content: ""; position: absolute; inset: 0; }
+}

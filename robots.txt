@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ehab-0.github.io/topfossdroid/sitemap.xml
